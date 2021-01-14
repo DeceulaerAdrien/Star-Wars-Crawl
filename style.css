@@ -1,0 +1,16 @@
+body {
+    display: flex; /* pour positionner le contenu dans la page */
+    justify-content: center; /* pour centrer l'image en horizontale*/
+    align-items: center; /* pour centrer l'image en verticale */
+    flex-direction: column; /*  */
+    text-align: center;
+    height: 100vh; /* toute la taille de l'écran */
+    background-image: url(assets/img/etoiles.jpg);
+    margin-top: 5vh;
+}
+h1 {
+    color: #1b7489;
+}
+p {
+    color: #FFFF00;
+}
