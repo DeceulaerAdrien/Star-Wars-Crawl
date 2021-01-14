@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(assets/img/etoiles.jpg);
+    color: yellow;
+    width: 100%;
+    font-size: 200%;
+    text-align: center;
+
+}
+#intro {
+    color: rgb(75, 213, 238);
+}
+#text {
+    
+}
