@@ -1,104 +1,105 @@
 body {
-  display: flex; /* pour positionner le contenu dans la page */
-  justify-content: center; /* pour centrer l'image en horizontale*/
-  align-items: center; /* pour centrer l'image en verticale */
-  flex-direction: column; /* pour afficher sous forme de colonne */
-  text-align: center;
-  width: 100%; /* toute la taille de l'écran */
-  background-image: url(assets/img/etoiles.jpg);
-  color: #FFFF00;
-  /*overflow: hidden;*/
+    background: url(assets/img/etoiles.jpg) no-repeat center center; /* L'image est positionnée en fond et est centrée */
+    display: flex; /* pour positionner le contenu dans la page */
+    align-items: center; /* pour centrer l'image en verticale */
+    flex-direction: column; /* pour afficher sous forme de colonne */
+    text-align: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 300%;
+    color: #FFFF00;
 }
 h1 {
-  color: #1b7489;
-}
+    color: #1b7489;
+  }
 .intro {
-  animation: introduction 100s ease-out;
-  /* appelle le @keyframes nommé introduction, 100s temps total de l'animation, ease-out permet de ralentir à la fin de l'animation */
-  animation-iteration-count: 1; /* nombre de fois où l'animation apparaît */
-  position: absolute; /* on s'en fiche de ce que tu as dit avant, je veux que tu sois à cette position */
-  top: 50%; /* centrer le texte d'intro en verticale, à 50% (milieu) de l'écran */
-}
-.logo {
-  animation: logo 100s ease-out;
-  /* appelle le @keyframes nommé logo, 100s temps total de l'animation, ease-out permet de ralentir à la fin de l'animation */
-  animation-iteration-count: 1; /* nombre de fois où l'animation apparaît */
-  position: absolute; /* on s'en fiche de ce que tu as dit avant, je veux que tu sois à cette position */
-  top: 50%; /* centrer le texte d'intro en verticale, à 50% (milieu) de l'écran */
-  right:30%;
-}
-.perspective{ /* application de la perspective sur ce qui va suivre */
-  transform: rotate3d(1,0,0,25deg); /* rotation sur l'angle x de 45deg */
-  transform: perspective(200px) rotateX(30deg); /*  */
-}
-.perspective div { /* application de l'animation sur le texte */
-  animation: paragraphes 100s linear;
-  /* appelle le @keyframes nommé paragraphes, 100s temps total de l'animation, linear permet de mettre la même vitessedu début à la fin de l'animation */
-  animation-iteration-count: 1;
-}
-.perspective p { 
-
-}
-
-@keyframes introduction { /* animation de l'intro */
-  0% {
-    opacity: 0; /* invisible au début 0% de l'animation complète */
+    animation: introduction 100s ease-out infinite;
+    /* appelle le @keyframes nommé introduction, 100s temps total de l'animation, ease-out permet de ralentir à la fin de l'animation */
+    animation-iteration-count: 1; /* nombre de fois où l'animation apparaît */
+    position: absolute; /* on s'en fiche de ce que tu as dit avant, je veux que tu sois à cette position */
+    top: 40%; /* centrer le texte d'intro en verticale, à 50% (milieu) de l'écran */
   }
-  1% {
-    opacity: 0; /* invisible à 1% de l'animation complète */
+  .logo {
+    animation: logo 100s ease-out infinite;
+    /* appelle le @keyframes nommé logo, 100s temps total de l'animation, ease-out permet de ralentir à la fin de l'animation */
+    /*animation-iteration-count: 1; /* nombre de fois où l'animation apparaît */
+    position: absolute; /* on s'en fiche de ce que tu as dit avant, je veux que tu sois à cette position */
+    top: 25%; /* centrer le texte d'intro en verticale, à 20% (milieu) du haut de l'écran */
   }
-  1.5% {
-    opacity: 1; /* visible à 1.5% de l'animation complète */
+  .perspective{ /* application de la perspective sur ce qui va suivre */
+    text-align: justify;
+    transform: rotate3d(1,0,0,25deg); /* rotation sur l'angle x de 45deg */
+    /*transform: perspective(100px) rotateX(30deg); */
+    position: relative;
+    top: 99999px;
+    transform-origin: 50% 100%;
+    animation: paragraphes 60s linear;
   }
-  5.5% { 
-    opacity: 1; /* visible à 5.5% de l'animation complète */
+  .perspective div { /* application de l'animation sur le texte */
+    animation: paragraphes 100s linear;
+    /* appelle le @keyframes nommé paragraphes, 100s temps total de l'animation, linear permet de mettre la même vitessedu début à la fin de l'animation */
+    animation-iteration-count: 1;
+  }
+  @keyframes introduction { /* animation de l'intro */
+    0% {
+      opacity: 0; /* invisible au début 0% de l'animation complète */
     }
-  6% {
-    opacity: 0; /* invisible à 7% de l'animation */
+    1% {
+      opacity: 0; /* invisible à 1% de l'animation complète */
+    }
+    1.5% {
+      opacity: 1; /* visible à 1.5% de l'animation complète */
+    }
+    5.5% { 
+      opacity: 1; /* visible à 5.5% de l'animation complète */
+      }
+    6% {
+      opacity: 0; /* invisible à 7% de l'animation */
+    }
+    100% {
+      opacity: 0; /* ne réapparaît plus jusqu'à la fin de l'animation */
+    }
   }
-  100% {
-    opacity: 0; /* ne réapparaît plus jusqu'à la fin de l'animation */
+  @keyframes logo {
+    0% {
+      opacity: 0;
+    }
+    9% {
+      transform: scale(1); /* scale(2) augmente la taille initiale de l'image par 2 */
+      opacity: 0;
+    }
+    9.1% {
+      opacity: 1;
+    }
+    14% { 
+      opacity: 1; 
+    }
+    18% { 
+      transform: scale(0.1); /* scale(0.1) diminue la taille initiale de l'image jusqu'à 0.1x l'image */
+      opacity: 0;
+    } 
+    100% {
+      opacity: 0;
+    }
   }
-}
-@keyframes logo {
-  0% {
-    opacity: 0;
+  @keyframes paragraphes {
+    0% {
+      top: -100%;
+      opacity: 0; /* invisible */
+      transform: rotateX(20deg)  translateZ(0);
+    }
+    18% {
+      top: 100%;
+      opacity: 0; /* invisible */
+    }
+    21.5% {
+      top: 100%;
+      opacity: 1; /* visible */
+    }
+    95% {
+      opacity: 1; /* visible */
+    }
+    100% {
+      top: 100%; /* invisible */
+      transform: rotateX(25deg) translateZ(2500px);
+    }
   }
-  9% {
-    transform: scale(1); /* scale(2) augmente la taille initiale de l'image par 2 */
-    opacity: 0;
-  }
-  9.1% {
-    opacity: 1;
-  }
-  14% { 
-    opacity: 1; 
-  }
-  18% { 
-    transform: scale(0.1); /* scale(0.1) diminue la taille initiale de l'image jusqu'à 0.1x l'image */
-    opacity: 0;
-  } 
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes paragraphes {
-  0% {
-    top: 100%;
-    opacity: 0; /* invisible */
-  }
-  18% {
-    top: 100%;
-    opacity: 0; /* invisible */
-  }
-  21.5% {
-    top: 100%;
-    opacity: 1; /* visible */
-  }
-  95% {
-    opacity: 1; /* visible */
-  }
-  100% {
-    top: -250%; /* invisible */
-  }
-}
