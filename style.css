@@ -8,34 +8,49 @@ body {
     overflow: hidden;
 }
 #intro {
+    position: absolute;
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;  
-    animation: intro 100s;
+    animation: intro 100s forwards;
     animation-iteration-count: 1; 
     opacity:1;
     color: rgb(75, 213, 238);
-    font-size: 200%;
-
-
+    font-size: 400%;
 }
 #logo {
+    position: absolute;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;    
-    opacity:0;
-    animation: logo 100s;
+    opacity: 0;
+    animation: logo 100s forwards;
+    animation-iteration-count: 1; 
 }
 #text{
-    opacity: 1;
+    width: 60%;
+    position: absolute;
     font-size: 250%;
     transform: rotate3d(1,0,0,45deg);
-    background-image: url(assets/img/etoiles.jpg);
+    animation-iteration-count: 1; 
+    height: 100vh;
+    margin: 0 20% 0 20%;
+    text-align: justify;
+    transform: perspective(200px) rotateX(30deg);
 }
+#text div {
+    position: absolute;
+    top: 100%;
+    animation: text 100s linear;        
+}
+#text p {
+    margin: 20px 0 30px 0;
+}
+
 @keyframes intro {
     0% {
         opacity: 0;
@@ -43,31 +58,49 @@ body {
     1% {
         opacity: 0.5;
     }
-    2% {
+    1.5% {
         opacity: 1;
     }
-    3% {
-        opacity: 1;
+    5.5% {
+        opacity: 0.5;
     }
     6% {
         opacity: 0;
-
     }
     100% {
         opacity: 0;
     }
-    
 }
 @keyframes logo {
-    7% {
+    9% {
         opacity: 0;
         transform: scale(2);
     }
-    8% {
+    9.1% {
         opacity: 1;
     }
-    12% {
+    14% {
+        opacity: 1;
+    }
+    18% {
         transform: scale(0.1);
-        opacity: 0.5;
+        opacity: 0;
+    }
+}
+@keyframes text {
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+    7% {
+        top: 100%;
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        top: -250%;
+        opacity: 0;
     }
 }
