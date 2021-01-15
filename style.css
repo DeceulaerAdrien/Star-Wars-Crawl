@@ -1,16 +1,79 @@
 body {
-    display: flex; /* pour positionner le contenu dans la page */
-    justify-content: center; /* pour centrer l'image en horizontale*/
-    align-items: center; /* pour centrer l'image en verticale */
-    flex-direction: column; /*  */
-    text-align: center;
-    height: 100vh; /* toute la taille de l'écran */
-    background-image: url(assets/img/etoiles.jpg);
-    margin-top: 5vh;
+  display: flex; /* pour positionner le contenu dans la page */
+  justify-content: center; /* pour centrer l'image en horizontale*/
+  align-items: center; /* pour centrer l'image en verticale */
+  flex-direction: column; /* pour afficher sous forme de colonne */
+  text-align: center;
+  height: 100vh; /* toute la taille de l'écran */
+  background-image: url(assets/img/etoiles.jpg);
+  margin-top: 5vh;
 }
 h1 {
-    color: #1b7489;
+  color: #1b7489;
 }
 p {
-    color: #FFFF00;
+  color: #FFFF00;
+}
+.intro {
+  animation: introduction 100s ease-out;
+  /* appelle le @keyframes nommé introduction,
+  100s temps total de l'animation,
+  ease-out permet de ralentir à la fin de l'animation */
+  animation-iteration-count: 1; /* nombre de fois où l'animation apparaît */
+}
+.perspective{ /* application de la perspective sur ce qui va suivre */
+  transform: rotate3d(1,0,0,15deg); /* rotation sur l'angle x de 45deg */
+  transform: perspective(200px) rotateX(30deg);
+}
+.perspective div { /* application de l'animation sur le texte */
+  animation: paragraphes 100s linear;
+  animation-iteration-count: 1;
+}
+.perspective p { 
+  margin: 1.35em 0 1.85em 0;
+  line-height: 1.35em;  
+}
+
+@keyframes introduction { /* animation de l'intro */
+  0% {
+    opacity: 0; /* invisible au début 0% de l'animation complète */
+  }
+  1% {
+    opacity: 0; /* invisible à 1% de l'animation complète */
+  }
+  1.5% {
+    opacity: 1; /* visible à 1.5% de l'animation complète */
+  }
+  5.5% { 
+    opacity: 1; /* visible à 5.5% de l'animation complète */
+    }
+  6% {
+    opacity: 0; /* invisible à 7% de l'animation */
+  }
+  100% {
+    opacity: 0; /* ne réapparaît plus jusqu'à la fin de l'animation */
+  }
+}
+@keyframes logo {
+
+}
+@keyframes paragraphes {
+  0% {
+    top: 100%;
+    opacity: 0; /* invisible */
+  }
+  6% {
+    top: 100%;
+    opacity: 0; /* invisible */
+  }
+  7% {
+    top: 100%;
+    opacity: 1; /* visible */
+  }
+  95% {
+    opacity: 1; /* visible */
+  }
+  100% {
+    top: -250%; /* invisible */
+  }
 }
