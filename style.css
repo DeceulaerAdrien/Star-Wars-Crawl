@@ -1,5 +1,5 @@
 body {
-    background: url(assets/img/etoiles.jpg) no-repeat center center; /* L'image est positionnée en fond et est centrée */
+    background-image: url('assets/img/etoiles.jpg'); /* L'image est positionnée en fond et est centrée */
     display: flex; /* pour positionner le contenu dans la page */
     align-items: center; /* pour centrer l'image en verticale */
     flex-direction: column; /* pour afficher sous forme de colonne */
