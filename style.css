@@ -12,21 +12,21 @@ body {
 h1 {
     color: #1b7489;
   }
-#intro {
+.intro {
     animation: introduction 120s ease-out infinite;
     /* appelle le @keyframes nommé introduction, 100s temps total de l'animation, ease-out permet de ralentir à la fin de l'animation */
     animation-iteration-count: 1; /* nombre de fois où l'animation apparaît */
     position: absolute; /* on s'en fiche de ce que tu as dit avant, je veux que tu sois à cette position */
     top: 40%; /* centrer le texte d'intro en verticale, à 50% (milieu) de l'écran */
   }
-  #logo {
+  .logo {
     animation: logo 120s ease-out infinite;
     /* appelle le @keyframes nommé logo, 100s temps total de l'animation, ease-out permet de ralentir à la fin de l'animation */
     animation-iteration-count: 1; /* nombre de fois où l'animation apparaît */
     position: absolute; /* on s'en fiche de ce que tu as dit avant, je veux que tu sois à cette position */
     top: 15%; /* centrer le texte d'intro en verticale, à 20% (milieu) du haut de l'écran */
   }
-  #text{ /* application de la perspective sur ce qui va suivre */
+  .perspective{ /* application de la perspective sur ce qui va suivre */
     font-weight: 400;
     text-align: justify;
     position: absolute;
@@ -36,9 +36,13 @@ h1 {
     /*animation: paragraphes 60s linear forwards;*/
     animation-iteration-count: 1;
     /*transform: perspective(250px) rotateX(20deg);*/
+  }
+  .perspective div { /* application de l'animation sur le texte */
     animation: paragraphes 120s linear;
     /* appelle le @keyframes nommé paragraphes, 100s temps total de l'animation, linear permet de mettre la même vitessedu début à la fin de l'animation */
+    animation-iteration-count: 1;
   }
+
   @keyframes introduction { /* animation de l'intro */
     0% {
       opacity: 0; /* invisible au début 0% de l'animation complète */
