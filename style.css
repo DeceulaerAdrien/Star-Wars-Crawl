@@ -26,7 +26,7 @@ h1 {
     position: absolute; /* on s'en fiche de ce que tu as dit avant, je veux que tu sois à cette position */
     top: 15%; /* centrer le texte d'intro en verticale, à 20% (milieu) du haut de l'écran */
   }
-  .perspective{ /* application de la perspective sur ce qui va suivre */
+  .text{ /* application de la perspective sur ce qui va suivre */
     font-weight: 400;
     text-align: justify;
     position: absolute;
@@ -36,13 +36,9 @@ h1 {
     /*animation: paragraphes 60s linear forwards;*/
     animation-iteration-count: 1;
     /*transform: perspective(250px) rotateX(20deg);*/
-  }
-  .perspective div { /* application de l'animation sur le texte */
     animation: paragraphes 120s linear;
     /* appelle le @keyframes nommé paragraphes, 100s temps total de l'animation, linear permet de mettre la même vitessedu début à la fin de l'animation */
-    animation-iteration-count: 1;
   }
-
   @keyframes introduction { /* animation de l'intro */
     0% {
       opacity: 0; /* invisible au début 0% de l'animation complète */
