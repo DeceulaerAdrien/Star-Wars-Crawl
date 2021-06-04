@@ -3,9 +3,9 @@
 ## Star Wars
 
 ### links
-:lorem: http://en.lipsum.com/
-:audio_tag: https://www.w3schools.com/tags/tag_audio.asp
-:star_wars_intro: https://www.youtube.com/watch?v=C587lNBQXAw
+- lorem: http://en.lipsum.com/
+- audio_tag: https://www.w3schools.com/tags/tag_audio.asp
+- star_wars_intro: https://www.youtube.com/watch?v=C587lNBQXAw
 
 Type of challenge: *learning* +
 Duration: *120 min* +
