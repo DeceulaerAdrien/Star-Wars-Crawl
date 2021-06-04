@@ -7,13 +7,13 @@
 - audio_tag: https://www.w3schools.com/tags/tag_audio.asp
 - star_wars_intro: https://www.youtube.com/watch?v=C587lNBQXAw
 
-Type of challenge: *learning* +
-Duration: *120 min* +
-Deployment strategy: *Github page* +
-Team challenge: *2*
-Group : *your choice*
-Deadline : *15/01/2021*
-Form : *https://docs.google.com/spreadsheets/d/1RkYTp9EY5Ljqq1LVNEUY63wP1t2nTmMl7vKm-CuLwSk/edit?usp=sharing*
+- Type of challenge: *learning*
+- Duration: *120 min* +
+- Deployment strategy: *Github page* +
+- Team challenge: *2*
+- Group : *your choice*
+- Deadline : *15/01/2021*
+- Form : *https://docs.google.com/spreadsheets/d/1RkYTp9EY5Ljqq1LVNEUY63wP1t2nTmMl7vKm-CuLwSk/edit?usp=sharing*
 
 image::./images/star-wars.jpg[star wars intro]
 
