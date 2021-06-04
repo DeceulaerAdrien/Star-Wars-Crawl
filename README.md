@@ -61,10 +61,10 @@ make one in groups of two. Create a repository called _Star-Wars-Crawl_ with an
 
 ### Resources 
 
-* https://www.w3schools.com/css/css_align.asp[Center an element]
-* https://www.w3schools.com/css/css3_animations.asp[CSS3 Animations]
-* https://www.w3schools.com/css/css3_3dtransforms.asp[CSS3 Transformations]
-* https://tinyurl.com/y2dvujce[CSS Animation for Beginners]
+* [Center an element](https://www.w3schools.com/css/css_align.asp)
+* [CSS3 Animations](https://www.w3schools.com/css/css3_animations.asp)
+* [CSS3 Transformations](https://www.w3schools.com/css/css3_3dtransforms.asp)
+* [CSS Animation for Beginners](https://tinyurl.com/y2dvujce)
 
 
 ### Congrats
