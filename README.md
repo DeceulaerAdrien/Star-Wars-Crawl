@@ -13,22 +13,21 @@
 - Team challenge: *2*
 - Group : *your choice*
 - Deadline : *15/01/2021*
-- Form : *https://docs.google.com/spreadsheets/d/1RkYTp9EY5Ljqq1LVNEUY63wP1t2nTmMl7vKm-CuLwSk/edit?usp=sharing*
 
-image::./images/star-wars.jpg[star wars intro]
+![star wars intro](https://raw.githubusercontent.com/DeceulaerAdrien/Star-Wars-Crawl/main/assets/img/Capture.PNG)
 
 
 ### Learning objectives
 
 At the end of this challenge you should be able to:
 
-* use basic *CSS* animation rules
-* work in *pair-programming*
+- use basic *CSS* animation rules
+- work in *pair-programming*
 
 
 ### The mission
 
-Ever seen the {star_wars_intro}[Star Wars intro]? Well, you're gonna have to
+Ever seen the star_wars_intro ? Well, you're gonna have to
 make one in groups of two. Create a repository called _Star-Wars-Crawl_ with an
 `index.html` and a `style.css`.
 
@@ -57,7 +56,7 @@ make one in groups of two. Create a repository called _Star-Wars-Crawl_ with an
 
 ### Bonus
 
-* add music with the `<audio>` {audio_tag}[tag]
+* add music with the `<audio>`
 
 
 ### Resources 
@@ -73,4 +72,4 @@ make one in groups of two. Create a repository called _Star-Wars-Crawl_ with an
 The force by each challenge stronger in you is. A great Jedi of the code you
 will be.
 
-image::https://media.giphy.com/media/6fScAIQR0P0xW/giphy.gif[]
+![]()
