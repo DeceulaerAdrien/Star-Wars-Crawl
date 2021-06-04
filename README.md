@@ -72,4 +72,4 @@ make one in groups of two. Create a repository called _Star-Wars-Crawl_ with an
 The force by each challenge stronger in you is. A great Jedi of the code you
 will be.
 
-![]()
+![](https://media.giphy.com/media/6fScAIQR0P0xW/giphy.gif)
