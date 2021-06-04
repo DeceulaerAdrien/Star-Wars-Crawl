@@ -1,8 +1,8 @@
 # Star-Wars-Crawl
 
-= Star Wars
+## Star Wars
 
-// links
+### links
 :lorem: http://en.lipsum.com/
 :audio_tag: https://www.w3schools.com/tags/tag_audio.asp
 :star_wars_intro: https://www.youtube.com/watch?v=C587lNBQXAw
@@ -18,7 +18,7 @@ Form : *https://docs.google.com/spreadsheets/d/1RkYTp9EY5Ljqq1LVNEUY63wP1t2nTmMl
 image::./images/star-wars.jpg[star wars intro]
 
 
-== Learning objectives
+### Learning objectives
 
 At the end of this challenge you should be able to:
 
@@ -26,13 +26,13 @@ At the end of this challenge you should be able to:
 * work in *pair-programming*
 
 
-== The mission
+### The mission
 
 Ever seen the {star_wars_intro}[Star Wars intro]? Well, you're gonna have to
 make one in groups of two. Create a repository called _Star-Wars-Crawl_ with an
 `index.html` and a `style.css`.
 
-=== Instructions
+### Instructions
 
 .First version
 * create the repository
@@ -55,12 +55,12 @@ make one in groups of two. Create a repository called _Star-Wars-Crawl_ with an
 * commit/push
 * deploy on a Github page
 
-=== Bonus
+### Bonus
 
 * add music with the `<audio>` {audio_tag}[tag]
 
 
-== Resources 
+### Resources 
 
 * https://www.w3schools.com/css/css_align.asp[Center an element]
 * https://www.w3schools.com/css/css3_animations.asp[CSS3 Animations]
@@ -68,7 +68,7 @@ make one in groups of two. Create a repository called _Star-Wars-Crawl_ with an
 * https://tinyurl.com/y2dvujce[CSS Animation for Beginners]
 
 
-== Congrats
+### Congrats
 
 The force by each challenge stronger in you is. A great Jedi of the code you
 will be.
